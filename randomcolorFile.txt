@@ -1,0 +1,30 @@
+Test file for the random color generator:
+The generateColre function defines three variables:
+The Red;
+The Green;
+The Blue;
+The RGB()
+The rgb's runs through random numbers using the Maths.floor(Maths.random()*225) - which gives of an out put of random numbers;
+and the generateColor function returns the variables red, green and blue;
+
+The generatecolor function is then called by the second function.
+
+The function generate is the main code that uses the result of the generateColor and some dom manipulations to display the colors that are being generated as background styles in div tags
+It has a pallet variable - The pallet variable is an Id that calles the html div tag, it is going to be acting as a parent div to the different div tags in the code.
+The pallet in the JavaScript code is then defined as a string;
+We then loop through to get 10 different colors - this can be reupdated to the amount of colors to be displayed at the moment
+Another div element is then created - giving it the value of the generateColor function.
+Adding a classList(col) to the div element.
+The copy variable is defined -  another div element,
+Having the value of a background display that display the first div having the generateColor function,
+The copy is given a class list of copy,
+We then collate all our created element and append the parent and child element to give the generated colors nice template.
+"Div.appendChild(copy)",
+"Pallet.appendChild(div)"
+
+
+Finally we need an eventlistner that would be set to call the function Generate() when Onclick.
+
+This Code can be reused in several other codes where you'd be needing a random color generator that gives you random collor after refreshing the site.
+
+Note: This is an open-source code that can be reused and added to. If incase you'd be needing to add to this code and add more functionalities to the code, please do well to make a PR after necessary addition and it would be acknowledged and accept if Fit.
